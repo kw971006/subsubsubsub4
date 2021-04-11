@@ -69,11 +69,9 @@ function setup() {
   random(0, windowWidth), random(0, windowHeight),random(30, 100),
   random(30, 100), color(random(100, 255))); 
 } 
-  {button = createButton('play');
+  button = createButton('play');
   button.position(10,10);
   button.mousePressed(startsound);
-
-}
 }
 
 function draw() { 
