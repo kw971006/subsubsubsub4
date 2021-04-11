@@ -3,8 +3,6 @@ let rainDrops = [];
 let mvSound;
 let bc = 0;
 let button;
-let state = 0;
-let bxy = 10;
 
 
 class rainDrop {
@@ -72,7 +70,7 @@ function setup() {
   random(30, 100), color(random(100, 255))); 
 } 
   {button = createButton('play');
-  button.position(bxy,bxy);
+  button.position(10,10);
   button.mousePressed(startsound);
 
 }
@@ -87,7 +85,4 @@ function draw() {
 }
 function startsound(){
   mvSound.play();
-}
-function mousePressed(){
-  state++;
 }
